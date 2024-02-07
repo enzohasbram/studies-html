@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+
+    <h2>Produtos</h2>
+
+    <!-- tr = table row -->
+    <!-- td = table data -->
+    <!-- th = table header-->
+    <table border="2" width="100%"> 
+        
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td>R$ 2.500,00</td>
+        </tr>
+
+        <tr>
+            <td>002</td>
+            <!-- também é possível colocar links -->
+            <td><img src="Imagens/tablet.jpg" alt="Tablet" width="20%"></td>
+            <td>R$ 500,00</td>
+        </tr>
+
+        <!-- colspan = column span = expansão de coluna -->
+        <tr>
+            <td rowspan="2">Desconto</td>
+            <td colspan="2">cupom1 -R$ 10</td>
+        </tr>
+
+        <!-- rowspan = row span = expansão da linha-->
+        <tr>
+            <td colspan="2">cupom2 -R$ 12</td>
+        </tr>
+
+        <tr>
+            <td>Total:</td>
+            <td colspan="2">R$ 3.000,00</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
