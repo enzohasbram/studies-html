@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia</title>
+</head>
+
+<body>
+
+    <p>
+        <strong>Formatos multimídia: </strong>
+        <a href="https://www.w3schools.com/html/html_media.asp">https://www.w3schools.com/html/html_media.asp</a>
+    </p>
+
+    <!-- controls adiciona controles de vídeo -->
+    <!-- source permite adcionar arquivos de vídeos alternativos como mp4, ogg... e o navegador irá escolher o primeiro formato reconhecido-->
+    <!-- e o texto entre as tags de video só serão exibidas caso o navegador não suporte o vídeo-->
+    <!-- autoplay inicia automaticamente o vídeo-->
+    <!-- muted adicionado ao autoplay inicia o vídeo já mudo-->
+    <p>
+        <strong>Vídeos: </strong> <br>
+        <video width="320"  height="240" autoplay controls muted>
+            <source src="Imagens/video.mp4" type="video/mp4">
+            <source src="Imagens/video.ogg" type="video/ogg">
+            seu navegador não suporta a tag de vídeo
+        </video>
+    </p>
+
+    <!-- Pode utilizar os mesmos atributos descritos acima -->
+    <p>
+        <strong>Áudios:</strong> <br>
+        <audio controls>
+            <source src="Imagens/audio.mp3" type="audio/mpeg">
+            <source src="Imagens/audio.ogg" type="audio/ogg">
+            Seu navegador não suporte este formato de áudio
+        </audio>
+    </p>
+    
+    <!-- object foi projetado para incorporar plug-ins, mas pode se ser usado para incluir HTML em HTML ou imagens -->
+    <!-- O embed tambem define um objeto incorporado em um HTML, e não possui tag de fechamento-->
+    <p>
+        <strong>Plug-ins:</strong> <br>
+        <object data="Imagens/ferrari.jpg" width="30%"></object>
+        <embed src="imagens.html" >
+    </p>
+    
+
+</body>
+
+</html>
